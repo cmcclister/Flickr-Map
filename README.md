@@ -1,1 +1,1 @@
-# tweet-and-flickr-map
+# flickr-map
