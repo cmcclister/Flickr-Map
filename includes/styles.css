@@ -1,0 +1,207 @@
+/* Global styles */
+* {
+	box-sizing: border-box; 
+}
+
+html, body, .gm-style {
+	font-family: 'Istok Web', sans-serif!important;
+	font-size: 12px!important;
+	height: 100%;
+	margin: 0;
+}
+
+/* Element styles */
+a#btn_mylocation {
+	margin: 0 10px !important;
+}
+
+.card {
+	clear: both;
+}
+
+.desc { 
+	font-size: 12px; 
+	font-style: italic;
+}
+
+.dropdown-menu {
+	max-height: 100px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.glyphicon {
+	color: #9d9d9d;
+	font-size: 20px;
+	top: 5px !important;
+}
+
+.glyphicon:hover {
+	color: #ffffff;
+}
+
+.gm-style-iw {
+	overflow: hidden !important;
+}
+
+input.form-control {
+	background-color: #fff;
+	display: inline!important;
+	font-size: 12px!important;
+	font-weight: 300;
+	left: 20px;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 200px!important;
+	z-index: 6;
+}
+
+input.form-control:focus {
+	border-color: #4d90fe;
+	margin-left: -1px;
+	padding-left: 14px;
+	width: 201px!important;
+
+}
+
+#loader {
+	display: none;
+	font-size: 12px;
+	font-weight: bold;
+	left: 50%;
+	letter-spacing: 2px;
+	margin-left: -78px;
+	margin-top: -78px;
+	position: fixed;
+	text-align: center;
+	text-transform: uppercase;
+	top: 50%;
+	width: 160px;
+	z-index: 100;
+}
+
+#loader div {
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+#loader img {
+	padding-bottom: 12px;
+}
+
+#map{
+	height: 100%;
+	margin: 0;
+}
+
+.navbar-brand {
+	color: #FFF;
+	font-size: 15px!important;
+	font-weight: 900;
+}
+
+.navbar-nav, .btn, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+	font-size: 12px!important;
+}
+
+.post {
+	float: left;
+	font-size: 12px;
+	overflow: auto;
+	padding: 5px 10px 5px 5px;
+	white-space: nowrap;
+	width: 66%;
+}
+
+.tags { 
+	font-size: 12px; 
+	font-weight: bold;
+}
+
+#toast-container>.toast-info {
+	margin-top: 48px;
+}
+
+.user {
+	float: left;
+	overflow: auto;
+	width: 33%;
+}
+
+.user img {
+	padding: 5px;
+}
+
+/* Resize navigation elements based on available width in browser */
+@media (min-width: 768px) {
+	.dropdown-menu {
+		max-height: 300px;
+	}
+	input.form-control {
+		width: 130px!important;
+	}
+	input.form-control:focus {
+		width: 131px!important;
+	}
+}
+
+@media (min-width: 820px) {
+	input.form-control {
+		font-size: 13px!important;
+		width: 150px!important;
+	}
+	input.form-control:focus {
+		width: 151px!important;
+	}
+	.navbar-brand {
+		font-size: 18px!important;
+	}
+	.navbar-nav, .btn, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+		font-size: 13px!important;
+	}
+}
+
+@media (min-width: 942px) {
+	.dropdown-menu {
+		max-height: 500px;
+	}
+	input.form-control {
+		font-size: 15px!important;
+		width: 200px!important;
+	}
+	input.form-control:focus {
+		width: 201px!important;
+	}
+	.navbar-brand {
+		font-size: 21px!important;
+	}
+	.navbar-nav, .btn, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+		font-size: 15px!important;
+	}
+}
+
+@media (min-width: 1042px) {
+	input.form-control {
+		width: 250px!important;
+	}
+	input.form-control:focus {
+		width: 251px!important;
+	}
+	.navbar-brand {
+		font-size: 21px!important;
+	}
+}
+
+@media (min-width: 1142px) {
+	input.form-control {
+		width: 300px!important;
+	}
+	input.form-control:focus {
+		width: 301px!important;
+	}
+	.navbar-brand {
+		font-size: 21px!important;
+	}
+}
