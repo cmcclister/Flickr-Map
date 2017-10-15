@@ -108,7 +108,7 @@ $(function () {
         $('#map_styles').append('<li><a data-mapstyle="' + val + '" data-mapcolors="' + style_colors.join() + '" href="#">' + key_name + '</a></li>');
     });
     $('#map_styles').append('<li class="divider"></li>');
-    $('#map_styles').append('<li><a href="http://snazzymaps.com" target="_new">More styles</a></li>');
+    $('#map_styles').append('<li><a href="http://snazzymaps.com" target="_blank">More styles</a></li>');
     $('#map_styles').css('height', $(window).height() - 50); // adjust map height per top nav
     // Add checkmark icon to default default style in dropdown
     $('#map_styles a[data-mapstyle=flat_map]').append('<span id="selected-dropdown-item" class="glyphicon glyphicon-ok"></span>');
@@ -157,7 +157,7 @@ var add_marker = function add_marker(item) {
     var marker = new google.maps.Marker(markerOptions);
     marker.setIcon('img/marker.png');
     var postSrc = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_t.jpg';
-    var postHtml = '<div class="card"><div class="user"><a href="https://flickr.com/photos/' + item.owner + '/' + item.id + '" target="_new"><img src="' + postSrc + '"></a></div><div class="post"><b>' + item.title + '</b><br />taken ' + item.datetaken.split(' ')[0] + '<br />by <a href="https://flickr.com/people/' + item.owner + '" target="_new">"' + item.ownername + '</a><br />with ' + item.views + 'views<div class="desc">' + item.description._content + '</div><div class="tags">' + item.tags + '</div></div></div>';
+    var postHtml = '<div class="card"><div class="user"><a href="https://flickr.com/photos/' + item.owner + '/' + item.id + '" target="_blank"><img src="' + postSrc + '"></a></div><div class="post"><b>' + item.title + '</b><br />taken ' + item.datetaken.split(' ')[0] + '<br />by <a href="https://flickr.com/people/' + item.owner + '" target="_blank">"' + item.ownername + '</a><br />with ' + item.views + 'views<div class="desc">' + item.description._content + '</div><div class="tags">' + item.tags + '</div></div></div>';
     // When user clicks on a a marker...
     google.maps.event.addListener(marker, 'click', function () {
         refreshPosts = false;
